@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Increment-Button/static/css/main.a981ce3b.css",
-    "main.js": "/Increment-Button/static/js/main.2506e96e.js",
-    "static/js/787.35791dd6.chunk.js": "/Increment-Button/static/js/787.35791dd6.chunk.js",
-    "index.html": "/Increment-Button/index.html",
-    "main.a981ce3b.css.map": "/Increment-Button/static/css/main.a981ce3b.css.map",
-    "main.2506e96e.js.map": "/Increment-Button/static/js/main.2506e96e.js.map",
-    "787.35791dd6.chunk.js.map": "/Increment-Button/static/js/787.35791dd6.chunk.js.map"
+    "main.css": "/increment-button/static/css/main.a981ce3b.css",
+    "main.js": "/increment-button/static/js/main.4a12a74f.js",
+    "static/js/787.35791dd6.chunk.js": "/increment-button/static/js/787.35791dd6.chunk.js",
+    "index.html": "/increment-button/index.html",
+    "main.a981ce3b.css.map": "/increment-button/static/css/main.a981ce3b.css.map",
+    "main.4a12a74f.js.map": "/increment-button/static/js/main.4a12a74f.js.map",
+    "787.35791dd6.chunk.js.map": "/increment-button/static/js/787.35791dd6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a981ce3b.css",
-    "static/js/main.2506e96e.js"
+    "static/js/main.4a12a74f.js"
   ]
 }
