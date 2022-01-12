@@ -1,6 +1,8 @@
 {
   "name": "increment-btn",
-  "homepage": "https://cip28.github.io/increment-button",
+  "homepage": "https://cip28.github.io/Increment-Button",
+  "description":"",
+  "main":"index.js",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
