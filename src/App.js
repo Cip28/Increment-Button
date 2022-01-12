@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React,{useState} from 'react'
 import './App.css';
+import Confetti from "react-confetti";
 
-function App() {
+function App () {
+  const [state, setState] = useState(0);
+  // const [action, setAction] = useState(false);
+  let target;
+  
+  const increment = () => {
+    setState(prev => prev + 1);
+  }
+  const decrement = () => {
+    setState(prev => prev - 1);
+  }
+  if (state === 20) {
+    target = true;
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {target &&
+          <div>
+            <Confetti/>
+            <h1>You have reached your target!</h1>
+          </div>
+        }
+        <div className='output'>
+        You have done {state} actions!
+        </div>
+      <div className='btns'>
+        <button onClick={decrement}>-</button>
+        <button onClick={increment}>+</button>
+      </div>
+      </div>
     </div>
   );
 }
