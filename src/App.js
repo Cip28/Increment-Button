@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './App.css';
 import Confetti from "react-confetti";
 
@@ -8,6 +8,15 @@ function App () {
   let target;
   let minitarget;
   
+  useEffect(() => {
+    setState(JSON.parse(window.sessionStorage.getItem("count")));
+  }, []);
+
+  useEffect(() => {
+    window.sessionStorage.setItem("count", state);
+  }, [state]);
+
+
   const increment = () => {
     setState(prev => prev + 1);
   }
@@ -17,7 +26,7 @@ function App () {
   if (state === 750) {
     target = true;
   }
-  if (state % 100 === 0) {
+  if (state % 100 === 0 && state!==0) {
     minitarget = true;
   }
 
