@@ -1,5 +1,6 @@
 {
   "name": "increment-btn",
+  "homepage": "https://https://github.com/Cip28/Increment-Button",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +43,5 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "homepage":""
+  "license": "ISC"
 }
