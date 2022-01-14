@@ -1,15 +1,69 @@
-.App {
+:root{
+  --background: #03045e;
+}
+
+
+/* ------------------------------HOME-------------------- */
+.home{
+  background-color:var(--background);
+  min-height:88.4vh;
+  color:#fff;
+  text-align: center;
+}
+.home h1{
+  font-size:2.4rem;
+  margin-bottom:3rem;
+}
+.home p{
+  font-size:1.5rem;
+  font-weight: bold;
+  font-style:italic;
+  margin-bottom:5rem;
+}
+.home p span,.home p a{color:red;}
+.btn{
+  color:#000;
+  background-color:#fff;
+  padding:15px;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:1.1rem;
+}
+.btn:hover{
+  transition:all .4s;
+  background-color:#f1f1f1;
+}
+
+.banner{
+
+  width:100vw;
+  max-width:100%;
+  height:88.4vh;
+  max-height:100%;
+  position: relative;
+}
+.text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* ------------------------------DAILY-------------------- */
+
+
+.daily {
   text-align: center;
   display:flex;
   justify-content: center;
   align-items: center;
   margin: auto 0;
-  min-height: 100vh;
-  /* vertical-align: middle; */
-  background-color: #03045e;
+  min-height: 89.2vh;
+  background-color: var(--background);
 }
 
-button{
+.daily button{
   background-color: #0077b6;
   border:1px solid black;;
   width:200px;
@@ -23,12 +77,12 @@ button{
   transition:all .3s;
 }
 
-button:hover{
+.daily button:hover{
   background-color: #0096c7;
   transition:all .3s;
 
 }
-button:focus{
+.daily button:focus{
   outline-style: solid;
   outline-color: azure;
 }
@@ -37,6 +91,138 @@ button:focus{
   color:azure;
   font-size:1.5rem;
 }
-h1{
+.daily h1{
   color:azure;
 }
+
+
+/* ------------------------------NAVBAR-------------------- */
+nav{
+  background-color: var(--background);
+  color:#fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid rgb(235, 212, 164);
+}
+nav ul{
+  display:flex;
+  margin:0;
+}
+nav ul li{
+  list-style: none;
+  padding:20px 45px;
+
+}
+nav a{
+  text-decoration:none;
+  color:rgb(180, 180, 179);
+}
+.active{
+  color:#fff;
+}
+.logo{
+  width:100px;
+  padding-left:3rem;
+}
+.fa-bars{
+  display:none;
+}
+@media only screen and (min-width:760px){
+  .hiddenToggle{display:none;}
+}
+  @media only screen and (max-width:760px){
+
+
+  nav ul{
+    flex-flow:column nowrap;
+    position:fixed;
+    top:100px;
+    height:30vh;
+    background-color: #fef68a;
+    width:70vw;    
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin: 0 4rem;
+    z-index: 1000;
+  }
+
+  li:hover{
+    background-color: rgb(129, 117, 98);
+
+  }
+    .hidden{
+      display:none;
+    }
+ 
+}
+
+
+/* ----------------------------ARCHIVE--------------------- */
+.archive{
+  background-color:var(--background);
+  height:190vh;
+  padding: 1rem;
+  /* max-width:960px; */
+}
+
+.note{
+  white-space:pre-wrap;
+  background-color: #fef68a; 
+  margin-bottom:10px;
+  border-radius:10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.note-footer{
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+}
+.notes-list{
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  
+}
+.note.new{
+  background-color: #67d7c9;
+}
+textarea{
+  background-color: #67d7c9;
+  border:none;
+  resize:none;
+
+}
+ textarea:focus{
+  outline:none;   
+ }
+ textarea::placeholder{
+   font-size:1.1rem;
+ }
+.save{
+  background: rgb(218, 218, 214);
+  border:none;
+  border-radius: 15px;
+  padding:10px 10px;
+  cursor:pointer;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.save:hover{
+  background: #fff;
+  transition:all .3s;
+}
+
+.fa-trash-alt{
+  cursor:pointer;
+
+}
+
+/* ------------------------------FORM-------------------- */

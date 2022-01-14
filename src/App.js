@@ -1,62 +1,30 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState } from 'react'
+import Hamburger from 'hamburger-react'
 import './App.css';
-import Confetti from "react-confetti";
+import Navbar from "./Navbar";
+import Daily from "./Daily";
+import Home from "./Home";
+import Archive from "./Archive";
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+
+
 
 function App () {
-  const [state, setState] = useState(0);
-  // const [action, setAction] = useState(false);
-  let target;
-  let minitarget;
+  const [isOpen, setOpen] = useState(false)
   
-  useEffect(() => {
-    setState(JSON.parse(window.sessionStorage.getItem("count")));
-  }, []);
-
-  useEffect(() => {
-    window.sessionStorage.setItem("count", state);
-  }, [state]);
-
-
-  const increment = () => {
-    setState(prev => prev + 1);
-  }
-  const decrement = () => {
-    setState(prev => prev - 1);
-  }
-  if (state === 750) {
-    target = true;
-  }
-  if (state % 100 === 0 && state!==0) {
-    minitarget = true;
-  }
-
-
-
   return (
-    <div className="App">
-      <div>
-        {target &&
-          <div>
-            <Confetti/>
-            <h1>You have reached your target!</h1>
-          </div>
-        }
-        {minitarget &&
-          <div>
-            <Confetti/>
-            <h1>{state} actions out of 750.</h1>
-          </div>
-        }
-        <div className='output'>
-        You have done {state} actions!
-        </div>
-      <div className='btns'>
-        <button onClick={decrement}>-</button>
-        <button onClick={increment}>+</button>
-      </div>
-      </div>
-    </div>
-  );
+     
+    <Router>
+          <Navbar />
+          <Routes>         
+            <Route exact path="/Increment-Button" element={ <Home />}/>
+            <Route path="/daily" element={<Daily />}/>
+            <Route path="/archive" element={<Archive />}/>
+          </Routes>
+    </Router>
+
+      );
 }
 
 export default App;
+  
