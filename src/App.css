@@ -159,6 +159,27 @@ nav a{
 }
 
 
+
+/* ----------------------------SEARCH--------------------- */
+.search{
+  display:flex;
+  align-items: center;
+  background-color:rgb(233,233,233);
+  border-radius:10px;
+  margin-bottom:1rem;
+  padding:10px;
+}
+.search input{
+  border:none;
+  background-color: rgb(233,233,233);
+  padding-left:10px;
+}
+.search input:focus{
+  outline:none;
+}
+
+
+
 /* ----------------------------ARCHIVE--------------------- */
 .archive{
   background-color:var(--background);

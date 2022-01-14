@@ -24,7 +24,7 @@ const AddNote = ({handleAddNote}) => {
     return (
         <div className='note new'>
             <textarea
-                placeholder='Enter the date and nr of actions...'
+                placeholder='Enter something...'
                 cols="20"
                 rows="8"
                 value={noteText}

@@ -1,27 +1,19 @@
 import React,{useState} from 'react'
 import NoteList from './Notes/NoteList'
 import { nanoid } from 'nanoid'
+import Search from './Notes/Search';
 
 export default function Archive(props) {
 
     const [notes, setNotes] = useState([
-        // {
-        //     id:nanoid(),
-        //     text:"firsdt note",
-        //     date:"15.212.321"
-        // },
-        // {
-        //     id: nanoid(),
-        //     text:"second note",
-        //     date:"15.212.321"
-        // },
-        // {
-        //     id: nanoid(),
-        //     text:"third note",
-        //     date:"15.212.321"
-        // },
-
+        {
+            id: nanoid(),
+            text:"first",
+            date: "12.2.212"
+        }
     ]);
+
+    const [searchText, setSearchText] = useState('');
 
     const addNote = (text) => {
         const date = new Date();
@@ -41,7 +33,8 @@ export default function Archive(props) {
 
     return (
         <div className='archive'>
-            <NoteList notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
+            <Search handleSearchNote={ setSearchText }/>
+            <NoteList notes={notes.filter((note) => note.date.toLowerCase().includes(searchText))} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
             
         </div>
     )
