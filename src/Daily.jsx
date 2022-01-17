@@ -23,8 +23,12 @@ export default function Daily(props) {
     const increment = () => {
       setState(prev => prev + 1);
     }
-    const reset = () => {
-      setState(0);
+    const reset = () => {     
+      if (window.confirm("Are you sure you want to reset the counter?") === true) {
+        setState(0);
+        
+      }
+      
     }
     const decrement = () => {
       setState(prev => prev - 1);
@@ -61,7 +65,8 @@ export default function Daily(props) {
                 </div>
                 <div className='btns'>
                     <button onClick={decrement} disabled={state < 1 ? true : false}>-</button>
-                    <button onClick={increment}>+</button>
+            <button onClick={increment}>+</button>
+            <br/>
                     <button onClick={reset} style={{backgroundColor:"red"}}>Reset</button>
                 </div>
              </div>

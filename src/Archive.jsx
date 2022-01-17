@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import NoteList from './Notes/NoteList'
 import { nanoid } from 'nanoid'
 import Search from './Notes/Search';
@@ -14,6 +14,10 @@ export default function Archive(props) {
     ]);
 
     const [searchText, setSearchText] = useState('');
+    useEffect(() => {
+
+        
+    })
 
     const addNote = (text) => {
         const date = new Date();

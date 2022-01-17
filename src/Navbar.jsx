@@ -13,7 +13,7 @@ export default function Navbar(props) {
     return (
         <nav>
             <NavLink to="/Increment-Button"><img src={logo} alt="logo" className='logo' /></NavLink>
-            <div className="hiddenToggle">
+            <div className="hiddenToggle " style={{marginRight:"2rem"}}>
                 <Hamburger toggled={isOpen} toggle={setOpen}  />
 
             </div>
