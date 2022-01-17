@@ -5,7 +5,6 @@ import './App.css';
 import Hamburger from 'hamburger-react'
 
 export default function Navbar(props) {
-    // const [navbarOpen, setNavbarOpen] = useState(false)
     const [isOpen, setOpen] = useState(false)
 
 
@@ -21,7 +20,6 @@ export default function Navbar(props) {
              <ul className={!isOpen ? 'hidden' : null}>
                <NavLink to="/daily"  activeclassname='active'> <li>Daily</li></NavLink>
                <NavLink to="/archive"> <li>Archive</li></NavLink>
-               <NavLink to="/form"> <li>Form</li></NavLink>
             </ul>
         </nav>
     )

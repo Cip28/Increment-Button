@@ -132,18 +132,18 @@ nav a{
   .hiddenToggle{display:none;}
 }
   @media only screen and (max-width:760px){
-
-
   nav ul{
     flex-flow:column nowrap;
     position:fixed;
     top:100px;
     height:30vh;
-    background-color: #fef68a;
+    background-color: #2b353f;
+    color:#000;
     width:70vw;    
     align-items: center;
     justify-content: center;
     padding:0;
+    border-radius:5px;
     margin: 0 4rem;
     z-index: 1000;
   }
@@ -245,5 +245,16 @@ textarea{
   cursor:pointer;
 
 }
+
+.date{
+  background-color:#184e77;
+  border-radius: 5px;
+  color:#fef68a;
+  font-size:1.2rem;
+  padding:15px;
+}
+/* ------------------------------FORM-------------------- */
+
+
 
 /* ------------------------------FORM-------------------- */

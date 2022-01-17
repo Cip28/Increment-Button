@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Hamburger from 'hamburger-react'
+import React from 'react'
 import './App.css';
 import Navbar from "./Navbar";
 import Daily from "./Daily";
@@ -10,8 +9,6 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 
 function App () {
-  const [isOpen, setOpen] = useState(false)
-  
   return (
      
     <Router>

@@ -4,9 +4,9 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 
     return (
         <div className='note'>
-            <span>{text}</span>
+            <span >{text}</span>
             <div className="note-footer">
-                <small>{date}</small>
+                <small className='date' >{date}</small>
                 <i className="fas fa-trash-alt" onClick={() => handleDeleteNote(id)}></i>
             </div>
         </div>
