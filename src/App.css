@@ -53,6 +53,41 @@
 /* ------------------------------DAILY-------------------- */
 
 
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+  cursor:pointer;
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   width:150px;
+   font-size:1.5rem;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+ 
+#reset{
+  background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+  width:200px;
+} 
+ .reset-btn{
+   display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+
 .daily {
   text-align: center;
   display:flex;
@@ -60,32 +95,10 @@
   align-items: center;
   margin: auto 0;
   min-height: 89.2vh;
-  background-color: var(--background);
+  background-color: #03045f;
 }
 
-.daily button{
-  background-color: #0077b6;
-  border:1px solid black;;
-  width:200px;
-  height:50px;
-  cursor:pointer;
-  color:azure;
-  font-size:1.5rem;
-  margin:10px;
-  border-radius:10px;
-  font-weight:bolder;
-  transition:all .3s;
-}
 
-.daily button:hover{
-  background-color: #0096c7;
-  transition:all .3s;
-
-}
-.daily button:focus{
-  outline-style: solid;
-  outline-color: azure;
-}
 .output{
 
   color:azure;
@@ -130,6 +143,9 @@ nav a{
 }
 @media only screen and (min-width:760px){
   .hiddenToggle{display:none;}
+  .btns-inc-dec{
+    display:flex;
+  }
 }
   @media only screen and (max-width:760px){
   nav ul{

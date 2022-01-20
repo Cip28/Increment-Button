@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid'
 import Search from './Notes/Search';
 
 export default function Archive(props) {
-
+// 
     const [notes, setNotes] = useState([
         {
             id: nanoid(),

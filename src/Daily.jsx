@@ -64,11 +64,15 @@ export default function Daily(props) {
                     {state && (state === 1 ? <h3>You have done {state} action!</h3> : <h3>You have done {state} actions!</h3>)}
                 </div>
                 <div className='btns'>
-                    <button onClick={decrement} disabled={state < 1 ? true : false}>-</button>
-            <button onClick={increment}>+</button>
-            <br/>
-                    <button onClick={reset} style={{backgroundColor:"red"}}>Reset</button>
-                </div>
+                  <div className='btns-inc-dec'>
+                    <button className='btn-grad' onClick={decrement} disabled={state < 1 ? true : false}>-</button>
+                    <button className='btn-grad' onClick={increment}>+</button>
+                  </div>
+            <br />
+                  <div className="reset-btn">
+                        <button className='btn-grad' id="reset" onClick={reset} >Reset</button>
+                  </div>
+               </div>
              </div>
         </main>
     )
