@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Increment-Button/static/css/main.202df886.css",
-    "main.js": "/Increment-Button/static/js/main.7328c2fb.js",
+    "main.css": "/Increment-Button/static/css/main.9d283fbd.css",
+    "main.js": "/Increment-Button/static/js/main.06d1b8ea.js",
     "static/js/787.35791dd6.chunk.js": "/Increment-Button/static/js/787.35791dd6.chunk.js",
     "static/media/banner.jpg": "/Increment-Button/static/media/banner.247c7b29fbf8721456b4.jpg",
     "index.html": "/Increment-Button/index.html",
-    "main.202df886.css.map": "/Increment-Button/static/css/main.202df886.css.map",
-    "main.7328c2fb.js.map": "/Increment-Button/static/js/main.7328c2fb.js.map",
+    "main.9d283fbd.css.map": "/Increment-Button/static/css/main.9d283fbd.css.map",
+    "main.06d1b8ea.js.map": "/Increment-Button/static/js/main.06d1b8ea.js.map",
     "787.35791dd6.chunk.js.map": "/Increment-Button/static/js/787.35791dd6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.202df886.css",
-    "static/js/main.7328c2fb.js"
+    "static/css/main.9d283fbd.css",
+    "static/js/main.06d1b8ea.js"
   ]
 }
